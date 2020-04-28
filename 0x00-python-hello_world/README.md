@@ -1,7 +1,7 @@
 # 0x00 Python - Hello, World
 ## This project is about introducing Python, with tasks that help with learning about the programming language and using it as well. Below are the tasks and the points I needed to follow to complete each task (From Holberton's intranet):
 ***0. Run Python file***
-- Write a Shell script that runs a Python script.
+- Write a Shell script that runs a Python script.\
 ***1. Run inline***
 - Write a Shell script that runs Python code.
 ***2. Hello, print***
