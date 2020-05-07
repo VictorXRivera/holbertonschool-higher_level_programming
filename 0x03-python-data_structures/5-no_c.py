@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    my_string = my_string.replace("c", "")
-    my_string = my_string.replace("C", "")
-    return my_string
+    bad_chars = ['c', 'C']
+    new_string = ''.join(i for i in my_string if not i in bad_chars)
+    return new_string
