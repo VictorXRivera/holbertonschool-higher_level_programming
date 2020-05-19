@@ -13,5 +13,5 @@ class Square:
         Args:
             size: attribute
         """
-        #:Private attribute
+        # Private attribute
         self.__size = size
