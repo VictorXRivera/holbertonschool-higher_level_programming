@@ -1,6 +1,4 @@
 #!/usr/bin/python3
 class Square:
-    """
-    Function to print a square
-    """
+    """Function that defines a square"""
     pass
