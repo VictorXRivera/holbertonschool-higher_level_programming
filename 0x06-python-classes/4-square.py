@@ -15,14 +15,16 @@ class Square:
         """
         # Private attribute
         self.__size = size
-        
+
     def area(self):
         return self.__size ** 2
+
     @property
     def size(self):
         """Getter
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """setter
