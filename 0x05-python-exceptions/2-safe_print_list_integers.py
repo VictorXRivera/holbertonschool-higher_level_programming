@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    try:
-        value = int(value)
-        print("{:d}".format(value))
-        return True
-    except ValueError:
-            try:
-                value = float(value)
-                print("{:f}".format(value))
-                return True
-            except ValueError:
-                return False
+    element = 0
+    for number in range(0, x):
+        try:
+            print("{:d}".format(my_list[number]), end="")
+            element = element + 1
+        except:
+            pass
+    print("")
+    return element
