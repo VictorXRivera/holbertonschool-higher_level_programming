@@ -34,7 +34,9 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__height) + ", " + str(self.__width) + ")"
+        height = str(self.__height)
+        width = str(self.__width)
+        return 'Rectangle({}, {})'.format(width, height)
     
     def __str__(self):
         if self.width == 0 or self.__height == 0:
