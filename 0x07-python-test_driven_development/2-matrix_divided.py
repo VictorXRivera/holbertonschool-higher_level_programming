@@ -3,8 +3,6 @@
 
 
 def matrix_divided(matrix, div):
-
-    div_matrix = []
     """ divide elements of matrix"""
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix \
