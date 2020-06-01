@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Function to print two names"""
+
+
 def say_my_name(first_name, last_name=""):
     """Edge cases for trying to print names
     """
