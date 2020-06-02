@@ -5,7 +5,6 @@
 def is_same_class(obj, a_class):
     """ Checks for object """
     if issubclass(a_class, int):
-        return True
         if isinstance(obj, int):
             return True
         return False
