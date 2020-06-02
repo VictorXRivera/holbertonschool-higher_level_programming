@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ function to check if object is exactly an instance of class """
 
 
