@@ -8,4 +8,5 @@ def number_of_lines(filename=""):
     with open(filename) as file:
         for i, l in enumerate(file):
             pass
+    file.closed
     return i + 1
