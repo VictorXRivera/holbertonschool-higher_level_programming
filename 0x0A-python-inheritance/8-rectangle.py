@@ -1,27 +1,14 @@
 #!/usr/bin/python3
-"""Empty class Geometry"""
-
-
-class BaseGeometry:
-    """Geometry Class"""
-
-    def integer_validator(self, name, value):
-        """Edge cases
-        """
-        if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
-        self.value = value
-        self.name = name
-    
-    def area(self):
-        """Area"""
-        raise Exception("area() is not implemented")
+""" Rectangle class inheriting from BaseGeometry """
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle Class"""
+    """ Child class Rectangle """
+
     def __init__(self, width, height):
+        """ Instantiation of width and height """
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
         self.__width = width
         self.__height = height
