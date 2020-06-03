@@ -5,6 +5,6 @@ of a class that inherited (directly or indirectly) from the specified class """
 
 def inherits_from(obj, a_class):
     """ Checks for object """
-    if issubclass(int, a_class):
-        return obj
+    if issubclass(int, a_class) is obj:
+        return True
     return False
