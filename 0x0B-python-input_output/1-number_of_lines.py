@@ -5,8 +5,7 @@
 def number_of_lines(filename=""):
     """ Number of lines """
     number = 0
-    line = 0
-    with open(filename) as f:
-        for number, line in enumerate(f):
-            pass
-    return number + 1
+    with open(filename) as file:
+        for numbers in file:
+            number += 1
+    return number
