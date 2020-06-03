@@ -6,4 +6,6 @@ class MyList(list):
     """ Function to print sorted list """
     def print_sorted(self):
         """ Print sorted """
-        print(sorted(self))
+        if isinstance(self, list):
+            print(sorted(self))
+        return False
