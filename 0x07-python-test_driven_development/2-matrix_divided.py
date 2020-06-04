@@ -23,7 +23,7 @@ def matrix_divided(matrix, div):
             raise TypeError("Each row of the matrix must have the same size")
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
-    if div is 0:
+    if div == 0:
         raise ZeroDivisionError("division by zero")
     div_matrix = [[round(d / div, 2) for d in index] for index in matrix]
     return div_matrix
