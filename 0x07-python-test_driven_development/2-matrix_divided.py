@@ -6,11 +6,11 @@ def matrix_divided(matrix, div):
     """ Returning a divided matrix """
     div_matrix = []
 
-    if not isinstance(matrix, list):
+    if type(matrix) is not list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     for element in matrix:
-        if not isinstance(element, list):
+        if type(element) is not list:
             raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
         for ele2 in element:
