@@ -5,5 +5,5 @@ import json
 
 def class_to_json(obj):
     """ Class to json """
-    jsonStr = json.dumps(obj.__dict__)
+    jsonStr = obj.__dict__
     return jsonStr
