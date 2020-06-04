@@ -5,4 +5,5 @@ import json
 
 def class_to_json(obj):
     """ Class to json """
-    json.dumps(f.__dict__)
+    jsonStr = json.dumps(obj.__dict__)
+    return jsonStr
