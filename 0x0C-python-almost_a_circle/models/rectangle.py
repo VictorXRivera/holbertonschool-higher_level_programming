@@ -5,7 +5,6 @@ from models.base import Base
 
 class Rectangle(Base):
     """ Class Rectangle inherting Base """
-
     def __init__(self, width, height, x=0, y=0, id=None):
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
@@ -32,6 +31,19 @@ class Rectangle(Base):
     def area(self):
         """ Area public method """
         return self.width * self.height
+
+    def display(self):
+        """ Pound printer """
+        if self.width == 0 or self.height == 0:
+            return None
+        symbol = '#'
+        shape = ""
+        for height in range(self.height):
+            for width in range(self.width):
+                shape += str(symbol)
+            if height is not self.height - 1:
+                shape += "\n"
+        print(shape)
 
     @property
     def width(self):
