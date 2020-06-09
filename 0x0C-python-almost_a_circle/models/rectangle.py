@@ -84,3 +84,11 @@ class Rectangle(Base):
             if height is not self.height - 1:
                 shape += "\n"
         print(shape)
+
+    def __str__(self):
+        id = str(self.id)
+        width = str(self.width)
+        height = str(self.height)
+        x = str(self.x)
+        y = str(self.y)
+        return '[Rectangle] ({}) {}/{} - {}/{}'.format(id, x, y, width, height)
