@@ -45,3 +45,11 @@ class Square(Rectangle):
             self.y = args[3]
         elif "y" in kwargs:
             self.y = kwargs["y"]
+
+    def to_dictionary(self):
+        """ Dictionary """
+        rec_dict = super().to_dictionary()
+        rec_dict["size"] = rec_dict["width"]
+        rec_dict.pop("width")
+        rec_dict.pop("height")
+        return rec_dict
