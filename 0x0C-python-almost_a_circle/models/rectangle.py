@@ -74,16 +74,11 @@ class Rectangle(Base):
 
     def display(self):
         """ Pound printer """
-        if self.width == 0 or self.height == 0:
-            return None
         symbol = '#'
         shape = ""
-        for height in range(self.height):
-            for width in range(self.width):
-                shape += str(symbol)
-            if height is not self.height - 1:
-                shape += "\n"
-        print(shape)
+        print("{}".format('\n' * self.__y), end=shape)
+        for i in range(self.__height):
+            print('{}{}'.format(' ' * self.__x, symbol * self.__width))
 
     def __str__(self):
         id = str(self.id)
