@@ -38,3 +38,11 @@ class Base:
             filename = "Square.json"
         with open(filename, "w") as f:
             f.write(j_list)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ Json string to dictionary """
+        empty_list = []
+        if json_string is None:
+            return empty_list
+        return json.loads(json_string)
