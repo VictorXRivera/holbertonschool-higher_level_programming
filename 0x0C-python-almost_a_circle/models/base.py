@@ -63,10 +63,11 @@ class Base:
         obj = []
         name = cls.__name__ + ".json"
         try:
-            with open(filename, 'r') as f:
+            with open(filename, 'r', encoding='utf-8') as f:
                 text = f.read()
         except:
             return []
+
         json_str = cls.from_json_string(text)
         for ele in json_str:
             obj.append(cls.create(**ele))
