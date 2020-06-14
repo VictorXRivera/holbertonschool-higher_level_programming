@@ -47,6 +47,7 @@ class Base:
             return empty_list
         return json.loads(json_string)
 
+    @classmethod
     def create(cls, **dictionary):
         """ Return instance with set attributes """
         if cls.__name__ == "Rectangle":
@@ -55,3 +56,18 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_life(cls):
+        """ Loading from file """
+        obj = []
+        name = cls.__name__ + ".json"
+        try:
+            with open(filename, 'r') as f:
+                text = f.read()
+        except:
+            return []
+        json_str = cls.from_json_string(text)
+        for ele in json_str:
+            obj.append(cls.create(**ele))
+        return obj
