@@ -58,7 +58,7 @@ class Base:
         return dummy
 
     @classmethod
-    def load_from_life(cls):
+    def load_from_file(cls):
         """ Loading from file """
         obj = []
         name = cls.__name__ + ".json"
