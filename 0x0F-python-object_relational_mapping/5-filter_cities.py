@@ -21,7 +21,7 @@ if __name__ == "__main__":
             print(", {:s}".format(states[0]), end='')
         else:
             print("{:s}".format(states[0]), end='')
-        print()
+    print()
     """Close cursor and connection to database"""
     cursor.close()
     database.close()
